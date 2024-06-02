@@ -1,0 +1,14 @@
+<h1>
+  {weatherData && weatherData.main && weatherData.main.temp}
+</h1>
+<h1>
+  {weatherData.weather[0].description}
+</h1>
+
+<h1>{weatherData.name}</h1>
+<h1>{weatherData.main.humidity}</h1>
+<h1>{weatherData.wind.speed}</h1>
+
+<img className=' w-[10vw] h-[20vh]' src={`http://openweathermap.org/img/w/${icon}.png`} alt="weather icon" />
+
+const icon = weatherData.weather[0].icon;
