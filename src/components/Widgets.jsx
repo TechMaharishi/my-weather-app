@@ -13,7 +13,7 @@ const Widgets = () => {
     <>
       {citiesWeatherData.map((city, index) => (
         // Each city weather card
-        <div key={index} className='relative gap-4 flex h-[10rem] rounded-xl drop-shadow-lg bg-zinc-300 p-4'
+        <div key={index} className='relative gap-4 flex flex-wrap h-[10rem] rounded-xl drop-shadow-lg bg-zinc-300 p-4'
           style={{ boxShadow: "6px 6px 12px #8d8d8d, -6px -6px 12px #ffffff" }}>
 
           {/* Button to remove a city */}
@@ -22,10 +22,10 @@ const Widgets = () => {
           </button>
 
           {/* Weather icon */}
-          <img src={`http://openweathermap.org/img/w/${city.weather[0].icon}.png`} alt="" />
+          <img className='min-w-[4.5rem]' src={`http://openweathermap.org/img/w/${city.weather[0].icon}.png`} alt="" />
 
           {/* City weather details */}
-          <div>
+          <div className=''>
             <h1 className="text-lg font-semibold">{city.name}</h1>
             <h2 className="text-3xl">
               <span className="font-bold">{city.main.temp}</span>

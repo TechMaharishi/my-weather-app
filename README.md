@@ -96,4 +96,7 @@ Contributions are welcome! If you'd like to contribute, please fork the reposito
 ## License
 This project is made by Vishal Kumar and any body can reffer to it and use it to learn the concepts. 
 
+## Project Link
+Preview the Weather App project with this link  :   [Project Link](https://my-weather-app-khaki.vercel.app/)
+
 ---
